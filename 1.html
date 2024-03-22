@@ -5,26 +5,54 @@
             개미의 페이지 - 고양이
         </title>
         <meta charset="utf-8">
+        <style>
+            a {
+                color: black;
+                text-decoration: none;
+            }
+            h1 {
+                font-size: 45px;
+                text-align: center;
+                border-bottom: 1px solid gray;
+                margin: 0;
+                padding: 20px;
+            }
+            #grid ol {
+                border-right: 1px solid gray;
+                width: 130px;
+                margin: 0;
+                padding: 20px;
+            }
+            .list {
+                font-size: 30px;
+            }
+            #grid{
+                display: grid;
+                grid-template-columns: 150px 1fr;
+            }
+            #grid #article{
+                padding-left: 40px;
+                padding-top: 0px;
+            }
+        </style>
     </head>
     <body>
         <h1><a href="index.html">동물</a></h1>
-        <ol>
-            <li><a href="1.html">고양이</a></li>
-            <li><a href="2.html">토끼</a></li> 
-        </ol>
-        
-        <h2>고양이</h2>
-        <img src="cat.jpg" width="30%">
-        <p>
-            <a href="https://namu.wiki/w/%EA%B3%A0%EC%96%91%EC%9D%B4"
-            target="_blank" title="고양이란">고양이</a>는 서열이 높은 자가 낮은 자를 핥습니다. 
-            그래서 그루밍을 남이 해주는 것을 좋아합니다
-        </p>
-        <p>
-            <iframe width="893" height="502" src="https://www.youtube.com/embed/bh4Szf4c-kc" title="입양을 고민하는 초보집사가 반드시 알아야 할 고양이 십계명" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </p>
-       
-       
+        <div id="grid">
+            <ol>
+                <li><a href="1.html">고양이</a></li>
+                <li><a href="2.html">토끼</a></li> 
+            </ol>
+            <div id="article">
+                <h2>고양이</h2>
+                <img src="cat.jpg" width="30%">
+                <p>
+                    <a href="https://namu.wiki/w/%EA%B3%A0%EC%96%91%EC%9D%B4"
+                    target="_blank" title="고양이란">고양이</a>는 서열이 높은 자가 낮은 자를 핥습니다. 
+                    그래서 그루밍을 남이 해주는 것을 좋아합니다
+                </p>
+            </div>
+        </div>
     </body>
 </html>
 
